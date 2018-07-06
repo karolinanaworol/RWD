@@ -1,37 +1,68 @@
-header {
-    position: relative;
+body
+{
+    margin:0 auto;
+}
+
+h1, h2
+{
+    font-family: verdana, sans-serif;
+    margin:0;
+}
+
+#gallery
+{
     background-image: url(../obrazy/man-1.jpg);
-    background-size: cover;
-    background-position: center;
     height: 100vh;
-    align-items: center;
-    margin: none;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position:relative;
 }
 
-h1 {
-    display: block;
-    color: white;
-    text-transform: uppercase;
-    font-style: normal;
-    font-family: sans-serif;
-    font-size: 3em;
-    left: 5vh;
+#header
+{
+    position: absolute;
+    margin:0 30px;
     top: 50%;
-    position: relative;
+    transform: translateY(-50%);
+    color: #fff;
 }
 
-h2 {
-    display: block;
-    color: white;
-    text-transform: uppercase;
-    font-style: normal;
-    font-family: sans-serif;
-    font-size: 2.5em;
-    left: 5vh;
-    top: 50%;
-    position: relative;
+
+@media (min-width:992px) and (max-width:1170px)
+{
+    #gallery
+    {
+        background-image: url(../obrazy/man-2.jpg);
+        background-position: center top;
+        height: 70vh;
+        
+    }
+    
+    #header
+    {
+        top: 30%;
+        right:5%;
+        color: #fff;
+    }
 }
 
-span {
-    font-family: serif;
+@media (max-width:992px)
+{
+    #gallery
+    {
+        background-image: url(../obrazy/man-1.jpg);
+        background-position: center;
+        height: 50vh;
+    }
+    
+    #header
+    {
+        top: 55vh;
+        text-align: center;
+        color: #000;
+        transform:none;
+        margin: 0 auto;
+        position:relative;
+    }
 }
