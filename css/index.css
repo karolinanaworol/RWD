@@ -1,68 +1,63 @@
-body
-{
-    margin:0 auto;
+body {
+    margin: 0 auto;
 }
 
-h1, h2
-{
+h1,
+h2 {
+    text-transform: uppercase;
     font-family: verdana, sans-serif;
-    margin:0;
+    margin: 0;
 }
 
-#gallery
-{
+#gallery {
     background-image: url(../obrazy/man-1.jpg);
     height: 100vh;
     width: 100%;
     background-position: center;
     background-size: cover;
-    position:relative;
+    position: relative;
 }
 
-#header
-{
+#header {
     position: absolute;
-    margin:0 30px;
+    margin: 0 30px;
     top: 50%;
     transform: translateY(-50%);
     color: #fff;
 }
 
+span {
+    font-family: serif;
+}
 
-@media (min-width:992px) and (max-width:1170px)
-{
-    #gallery
-    {
+@media (min-width:992px) and (max-width:1170px) {
+    #gallery {
         background-image: url(../obrazy/man-2.jpg);
         background-position: center top;
         height: 70vh;
-        
+
     }
-    
-    #header
-    {
+
+    #header {
         top: 30%;
-        right:5%;
+        right: 5%;
         color: #fff;
     }
 }
 
-@media (max-width:992px)
-{
-    #gallery
-    {
+@media (max-width:992px) {
+    #gallery {
         background-image: url(../obrazy/man-1.jpg);
         background-position: center;
         height: 50vh;
     }
-    
-    #header
-    {
+
+    #header {
         top: 55vh;
         text-align: center;
         color: #000;
-        transform:none;
+        transform: none;
         margin: 0 auto;
-        position:relative;
+        position: relative;
     }
 }
